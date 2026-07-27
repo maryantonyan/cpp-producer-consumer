@@ -8,6 +8,7 @@ Multiple producer and consumer threads communicate through a thread-safe queue
 implemented using mutexes and condition variables.
 
 
+
 ==============================================================
 
 **Features**
@@ -29,8 +30,10 @@ implemented using mutexes and condition variables.
 ✔ RAII synchronization
 
 
-==============================================================
 
+
+
+==============================================================
 **Concepts demonstrated**
 
 std::thread
@@ -54,7 +57,6 @@ Producer-Consumer pattern
 
 
 ==============================================================
-
 **Project structure**
 
 ```text
@@ -73,12 +75,12 @@ Statistics.h
 main.cpp
 
 Makefile
-```
+```text
 
 
 ==============================================================
-
 **Example output**
+
 
 
 ```text
@@ -301,18 +303,17 @@ Total tasks processed: 30
 
 
 ==============================================================
-
 **Build**
 
 *Windows*
-
 Open the Visual Studio solution and build.
 
 *Linux/macOS*
-
 ```bash
 make
 ./ProducerConsumer
 ```
 
+
 ==============================================================
+
