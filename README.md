@@ -305,7 +305,6 @@ Total tasks processed: 30
 **Build**
 
 *Windows*
-
 Open the Visual Studio solution and build.
 
 
