@@ -1,58 +1,87 @@
 ﻿**Producer-Consumer with Thread-Safe Queue**
 
+
 This project demonstrates a classic Producer-Consumer implementation in modern C++17.
+
 Multiple producer and consumer threads communicate through a thread-safe queue
+
 implemented using mutexes and condition variables.
 
 
+==============================================================
 
-========================================================================================
 **Features**
 
 ✔ Multiple producers
+
 ✔ Multiple consumers
+
 ✔ Thread-safe queue
+
 ✔ Graceful shutdown
+
 ✔ Thread-safe logging
+
 ✔ Task statistics
+
 ✔ Modern C++17
+
 ✔ RAII synchronization
 
 
+==============================================================
 
-========================================================================================
 **Concepts demonstrated**
 
 std::thread
+
 std::mutex
+
 std::lock\_guard
+
 std::unique\_lock
+
 std::condition\_variable
+
 std::atomic
+
 thread\_local
+
 RAII
+
 Producer-Consumer pattern
 
 
 
-========================================================================================
+==============================================================
+
 **Project structure**
 
+```text
 Task.h
+
 ThreadSafeQueue.h/.cpp
+
 Producer.h/.cpp
+
 Consumer.h/.cpp
+
 Logger.h
+
 Statistics.h
+
 main.cpp
+
 Makefile
+```
 
 
+==============================================================
 
-========================================================================================
 **Example output**
 
 
+```text
 
 \[Producer 1] Produced task 1 (639 ms)
 
@@ -243,7 +272,6 @@ Makefile
 \[Consumer 1] Exiting.
 
 
-
 =================================
 
 Execution statistics
@@ -269,22 +297,22 @@ Consumer 4: 7 tasks processed
 
 
 Total tasks processed: 30
+```
 
 
+==============================================================
 
-
-
-========================================================================================
 **Build**
 
 *Windows*
+
 Open the Visual Studio solution and build.
 
 *Linux/macOS*
+
+```bash
 make
 ./ProducerConsumer
+```
 
-
-
-========================================================================================
-
+==============================================================
