@@ -1,11 +1,13 @@
 ﻿**Producer-Consumer with Thread-Safe Queue**
 
 
+
 This project demonstrates a classic Producer-Consumer implementation in modern C++17.
 
 Multiple producer and consumer threads communicate through a thread-safe queue
 
 implemented using mutexes and condition variables.
+
 
 
 ==============================================================
@@ -27,6 +29,7 @@ implemented using mutexes and condition variables.
 ✔ Modern C++17
 
 ✔ RAII synchronization
+
 
 
 ==============================================================
@@ -52,7 +55,6 @@ RAII
 Producer-Consumer pattern
 
 
-
 ==============================================================
 
 **Project structure**
@@ -73,13 +75,12 @@ Statistics.h
 main.cpp
 
 Makefile
-```
+```text
 
 
 ==============================================================
 
 **Example output**
-
 
 ```text
 
@@ -299,7 +300,6 @@ Consumer 4: 7 tasks processed
 Total tasks processed: 30
 ```
 
-
 ==============================================================
 
 **Build**
@@ -308,8 +308,8 @@ Total tasks processed: 30
 
 Open the Visual Studio solution and build.
 
-*Linux/macOS*
 
+*Linux/macOS*
 ```bash
 make
 ./ProducerConsumer
