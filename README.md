@@ -1,7 +1,5 @@
 ﻿**Producer-Consumer with Thread-Safe Queue**
 
-
-
 This project demonstrates a classic Producer-Consumer implementation in modern C++17.
 
 Multiple producer and consumer threads communicate through a thread-safe queue
@@ -13,6 +11,7 @@ implemented using mutexes and condition variables.
 ==============================================================
 
 **Features**
+
 
 ✔ Multiple producers
 
@@ -35,6 +34,7 @@ implemented using mutexes and condition variables.
 ==============================================================
 
 **Concepts demonstrated**
+
 
 std::thread
 
@@ -75,7 +75,7 @@ Statistics.h
 main.cpp
 
 Makefile
-```text
+```
 
 
 ==============================================================
