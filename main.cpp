@@ -1,7 +1,6 @@
 #include "ThreadSafeQueue.h"
 #include "Producer.h"
 #include "Consumer.h"
-//#include "utils.h"
 
 #include <iostream>
 #include <cassert>
@@ -17,7 +16,7 @@ int main() {
 
     std::vector<std::thread> producers;
     producers.reserve(NUM_OF_PRODUCERS);
-    for (size_t i{ 1 }; i <= NUM_OF_PRODUCERS; ++i) {
+    for (int i{ 1 }; i <= NUM_OF_PRODUCERS; ++i) {
         producers.emplace_back(
             producer,
             std::ref(queue),
@@ -28,7 +27,7 @@ int main() {
 
     std::vector<std::thread> consumers;
     consumers.reserve(NUM_OF_CONSUMERS);
-    for (size_t i{ 1 }; i <= NUM_OF_CONSUMERS; ++i) {
+    for (int i{ 1 }; i <= NUM_OF_CONSUMERS; ++i) {
         consumers.emplace_back(
             consumer,
             std::ref(queue),
